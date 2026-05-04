@@ -8,24 +8,20 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import Submit from './pages/Submit';
 import Alerts from './pages/Alerts';
-
 function App() {
-  return (
-    <BrowserRouter>
+    return (<BrowserRouter>
       <Layout>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/directory' element={<Directory />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/submit' element={<Submit />} />
-          <Route path='/alerts' element={<Alerts />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/' element={<Home />}/>
+          <Route path='/directory' element={<Directory />}/>
+          <Route path='/events' element={<Events />}/>
+          <Route path='/dashboard' element={<Dashboard />}/>
+          <Route path='/profile' element={<Profile />}/>
+          <Route path='/submit' element={<Submit />}/>
+          <Route path='/alerts' element={<Alerts />}/>
+          <Route path='/about' element={<About />}/>
         </Routes>
       </Layout>
-    </BrowserRouter>
-  );
+    </BrowserRouter>);
 }
-
 export default App;

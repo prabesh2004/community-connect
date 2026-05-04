@@ -1,6 +1,5 @@
 export default function About() {
-  return (
-    <div className="container mx-auto py-16 px-4 max-w-4xl text-white">
+    return (<div className="container mx-auto py-16 px-4 max-w-4xl text-white">
       <h1 className="text-4xl font-bold tracking-tight mb-8">About CommUnity Connect</h1>
       
       <div className="prose prose-invert lg:prose-lg max-w-none">
@@ -32,6 +31,5 @@ export default function About() {
           <li><strong>Impact:</strong> See how volunteer efforts add up across causes.</li>
         </ul>
       </div>
-    </div>
-  );
+    </div>);
 }

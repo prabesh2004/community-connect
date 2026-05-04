@@ -2,22 +2,14 @@ import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-
 const saved = [
-  { id: 1, name: 'Youth Code Academy', role: 'Mentor', status: 'Open' },
-  { id: 2, name: 'Community Food Pantry', role: 'Driver', status: 'Pending' },
-  { id: 3, name: 'Green City Initiative', role: 'Cleanup Crew', status: 'Open' },
+    { id: 1, name: 'Youth Code Academy', role: 'Mentor', status: 'Open' },
+    { id: 2, name: 'Community Food Pantry', role: 'Driver', status: 'Pending' },
+    { id: 3, name: 'Green City Initiative', role: 'Cleanup Crew', status: 'Open' },
 ];
-
 export default function Profile() {
-  return (
-    <div className="container mx-auto py-16 px-4 text-white">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="mb-10"
-      >
+    return (<div className="container mx-auto py-16 px-4 text-white">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-10">
         <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-2">Profile</p>
         <h1 className="text-4xl font-bold tracking-tight">Volunteer Profile</h1>
         <p className="text-white/60 mt-3 max-w-2xl">
@@ -46,8 +38,7 @@ export default function Profile() {
             <CardTitle className="text-white">Saved Opportunities</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            {saved.map(item => (
-              <div key={item.id} className="flex flex-col md:flex-row md:items-center md:justify-between border border-white/10 rounded-lg p-4">
+            {saved.map(item => (<div key={item.id} className="flex flex-col md:flex-row md:items-center md:justify-between border border-white/10 rounded-lg p-4">
                 <div>
                   <p className="text-white font-semibold">{item.name}</p>
                   <p className="text-sm text-white/60">Role: {item.role}</p>
@@ -56,11 +47,9 @@ export default function Profile() {
                   <Badge className="bg-white text-black border-white">{item.status}</Badge>
                   <Button variant="outline" className="border-white/30 text-white hover:bg-white hover:text-black">View</Button>
                 </div>
-              </div>
-            ))}
+              </div>))}
           </CardContent>
         </Card>
       </div>
-    </div>
-  );
+    </div>);
 }

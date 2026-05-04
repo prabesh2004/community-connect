@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="min-h-screen flex flex-col font-sans">
+export default function Layout({ children }) {
+    return (<div className="min-h-screen flex flex-col font-sans">
       <header className="border-b border-white/10 bg-black sticky top-0 z-50 w-full shadow-[0_12px_40px_rgba(0,0,0,0.6)]">
         <div className="container mx-auto flex h-16 items-center px-4 justify-between">
           <Link to="/" className="text-xl font-semibold tracking-tight flex items-center gap-2 text-white">
@@ -28,6 +26,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <p>© 2026 CommUnity Connect.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
 }
