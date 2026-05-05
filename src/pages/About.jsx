@@ -30,6 +30,20 @@ export default function About() {
           <li><strong>Events:</strong> Track upcoming opportunities and community gatherings.</li>
           <li><strong>Impact:</strong> See how volunteer efforts add up across causes.</li>
         </ul>
+
+        <h2 className="text-2xl font-semibold mt-10 mb-4">Open Source</h2>
+        <p>
+          CommUnity Connect is an open-source project. You can view the source code, 
+          report issues, or contribute to the platform on our{' '}
+          <a 
+            href="https://github.com/prabesh2004/community-connect" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white underline hover:text-white/80 transition-colors"
+          >
+            GitHub Repository
+          </a>.
+        </p>
       </div>
     </div>);
 }
