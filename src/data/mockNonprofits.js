@@ -1,1 +1,57 @@
-for mock data 
+export const nonprofits = [
+    {
+        id: 1,
+        name: "Green City Initiative",
+        cause: "Environment",
+        description: "Dedicated to keeping our city parks and rivers clean through community action.",
+        needs: ["Cleanup Crew", "Event Coordinator", "Social Media"],
+        image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=400",
+        location: "Downtown",
+    },
+    {
+        id: 2,
+        name: "Youth Code Academy",
+        cause: "Education",
+        description: "Providing free coding and tech classes to underprivileged youth.",
+        needs: ["Tutors", "Mentors", "Hardware Donations"],
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=400",
+        location: "Northside",
+    },
+    {
+        id: 3,
+        name: "Community Food Pantry",
+        cause: "Hunger",
+        description: "Distributing nutritious meals to families facing food insecurity.",
+        needs: ["Drivers", "Warehouse Staff", "Fundraising"],
+        image: "https://images.unsplash.com/photo-1593113516832-f80cb81d61a2?auto=format&fit=crop&q=80&w=400",
+        location: "Eastville",
+    },
+    {
+        id: 4,
+        name: "Elderly Care Companions",
+        cause: "Community",
+        description: "Connecting volunteers with senior citizens for companionship and assistance.",
+        needs: ["Companions", "Errand Runners", "Event Planners"],
+        image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=400",
+        location: "Southside",
+    },
+    {
+        id: 5,
+        name: "Local Animal Rescue",
+        cause: "Animals",
+        description: "Rescuing and rehoming stray and abandoned animals in our city.",
+        needs: ["Foster Homes", "Dog Walkers", "Vet Techs"],
+        image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
+        location: "West End",
+    },
+    {
+        id: 6,
+        name: "Literacy for All",
+        cause: "Education",
+        description: "Adult literacy and ESL programs designed to empower our community.",
+        needs: ["Tutors", "Event Planners", "Translators"],
+        image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=400",
+        location: "Downtown",
+    }
+];
+export const causes = ["All", "Environment", "Education", "Hunger", "Community", "Animals"];
